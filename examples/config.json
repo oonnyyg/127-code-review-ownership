@@ -1,0 +1,19 @@
+{
+  "people": {
+    "alice": {},
+    "bob": {},
+    "carol": {},
+    "dave": {},
+    "erin": {"unavailable": true}
+  },
+  "teams": {
+    "backend":  {"members": ["alice", "bob"]},
+    "frontend": {"members": ["bob", "carol"]},
+    "all-devs": {"members": ["dave"], "teams": ["backend", "frontend"]}
+  },
+  "rules": [
+    {"pattern": "**", "owners": ["@all-devs"]},
+    {"pattern": "src/**", "owners": ["@backend"]},
+    {"pattern": "web/**", "owners": ["@frontend", "erin"]}
+  ]
+}

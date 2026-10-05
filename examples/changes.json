@@ -1,0 +1,10 @@
+{
+  "author": "dave",
+  "approvals": ["alice"],
+  "changes": [
+    {"kind": "modify", "path": "src/server.go"},
+    {"kind": "rename", "old_path": "web/old/app.ts", "new_path": "src/web/app.ts"},
+    {"kind": "add", "path": "docs/guide.md"},
+    {"kind": "delete", "path": "web/legacy.ts"}
+  ]
+}
