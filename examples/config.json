@@ -1,0 +1,13 @@
+{
+  "rules": [
+    { "pattern": "**", "owners": ["team:all"] },
+    { "pattern": "src/**", "owners": ["@alice", "team:backend"] },
+    { "pattern": "docs/**", "owners": ["@carol"] }
+  ],
+  "teams": [
+    { "name": "all", "members": ["@bob"] },
+    { "name": "backend", "members": ["@alice", "@bob", "team:all"] }
+  ],
+  "submitter": "@bob",
+  "unavailable": ["@carol"]
+}

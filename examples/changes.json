@@ -1,0 +1,7 @@
+{
+  "changes": [
+    { "type": "modify", "path": "src/main.go" },
+    { "type": "rename", "old_path": "src/old.go", "new_path": "docs/old.md" },
+    { "type": "delete", "path": "scripts/clean.sh" }
+  ]
+}
